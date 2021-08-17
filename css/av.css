@@ -4,3 +4,13 @@
   height: 256px;
   border-radius: 50%;
 }
+
+/* Blog Button */
+.button.button-blog {
+  color: #ffffff;
+  background-color: #ff5500;
+}
+.button.button-blog:hover,
+.button.button-blog:focus {
+  filter: brightness(90%);
+}
