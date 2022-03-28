@@ -1,104 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <!-- Page Information
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>KD Puvvadi</title>
-  <meta name="description" content="Software & Magic">
+  <meta name="description" content="KD Puvvadi, Software Engineer, AWS, DevOps, Azure, Digital Ocean">
   <meta name="author" content="KD Puvvadi">
+
+  <!-- Facebook Meta  -->
+  <meta property="og:title" content="KD Puvvadi">
+  <meta property="og:description" content="KD Puvvadi, Software Engineer, AWS, DevOps, Azure, Digital Ocean">
+  <meta property="og:image" content="images/dp.webp">
+  <meta property="og:url" content="https://puvvadi.me">
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:title" content="KD Puvvadi">
+  <meta name="twitter:description" content="KD Puvvadi, Software Engineer, AWS, DevOps, Azure, Digital Ocean">
+  <meta name="twitter:image" content="images/dp.webp">
+  <meta name="twitter:card" content="summary_large_image">
+
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link
-    rel="preload"
-    href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap"
-    as="style"
-    onload="this.onload=null;this.rel='stylesheet'"
-  >
-  <noscript>
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap"
-      rel="stylesheet"
-      type="text/css" 
-    />
-  </noscript>
-
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="https://cdn.puvvadi.me/css/normalize.css">
-  <link rel="stylesheet" href="https://cdn.puvvadi.me/css/skeleton-dark.css">
-  <link rel="stylesheet" href="https://cdn.puvvadi.me/css/brands.css">
-  <link rel="stylesheet" href="https://cdn.puvvadi.me/css/av.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/webp" href="https://cdn.puvvadi.me/img/orange.webp">
-
 </head>
 <body>
-
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-    <div class="row">
-      <div class="column" style="margin-top: 10%">
+    <div class="content">
+      <!-- Image -->
+      <img id="userPhoto" src="images/dp.webp" alt="KD's DP">
 
-        <!-- Your Image Here -->
-        <img id="avatar" class="avatar" src="https://cdn.puvvadi.me/img/dp.webp" alt="KD Puvvadi Profile Picture">
+      <!-- Name -->
+      <h1><a href="/" id="userName" rel="noopener">@kdpuvvadi</a></h1>
 
-        <!-- Your Name -->
-        <h1>KD Puvvadi</h1>
+      <!-- Short Bio -->
+      <p>Software and Magic</p>
 
-        <!-- Short Bio -->
-        <p>Software and Magic</p>
+      <div id="links">
+        <a class="link" href="https://github.com/kdpuvvadi/" target="_blank" rel="noopener">github</a>
+        <a class="link" href="https://twitter.com/KDPuvvadi/" target="_blank" rel="noopener">twitter</a>
+        <a class="link" href="https://www.instagram.com/kdpuvvadi/" target="_blank" rel="noopener">instagram</a>
+        <a class="link" href="https://blog.puvvadi.me/" target="_blank" rel="noopener">blog</a>
 
-        <!-- Github -->
-        <a class="button button-github" href="https://github.com/kdpuvvadi/" target="_blank" rel="noopener"><img class="icon" src="https://cdn.puvvadi.me/icons/github.svg" alt="GitHub Logo">GitHub</a>
-          <br>
-        
-        <!-- Twitter -->
-        <a class="button button-twitter" href="https://twitter.com/KDPuvvadi" target="_blank" rel="noopener"><img class="icon" src="https://cdn.puvvadi.me/icons/twitter.svg" alt="Twitter Logo">Twitter</a>
-          <br>
+        <p>Thanks for visiting. Au revoir</p>
 
-        <!-- Instagram -->
-        <a class="button button-instagram" href="https://www.instagram.com/kdpuvvadi/" target="_blank" rel="noopener"><img class="icon" src="https://cdn.puvvadi.me/icons/instagram.svg" alt="Instagram Logo">Instagram</a>
-          <br>
-        
-        <a class="button button-blog" href="https://blog.puvvadi.me/" target="_blank" rel="noopener"><img class="icon" src="https://cdn.puvvadi.me/icons/blog_2.svg" alt="Blog Logo">Blog</a>
-      
-        
-        <br>
-        <br>
-        <p>Thanks for visiting. Au revoir </p>
-        <!-- Donate to Quad9 -->
-        <a class="button button-discord" href="https://www.quad9.net/donate/" target="_blank" rel="noopener">Donate to Quad9 DNS</a>
-          <br>
-
-        <!-- Donate to signal -->
-        <a class="button button-steam" href="https://signal.org/donate/" target="_blank" rel="noopener"><img class="icon" src="https://cdn.puvvadi.me/icons/signal.svg" >Donate to Signal</a>
-
-
+        <a class="link" href="https://www.quad9.net/donate/" target="_blank" rel="noopener">Donate to Quad9</a>
+        <a class="link" href="https://signal.org/donate/" target="_blank" rel="noopener">Donate to Signal</a>
       </div>
     </div>
   </div>
-
-<!-- End Document
+  <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5GN0YGY0C5"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-5GN0YGY0C5');
+    window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); }
+    gtag("js", new Date());
+    gtag("config", "G-5GN0YGY0C5");
   </script>
-
 </body>
+
 </html>

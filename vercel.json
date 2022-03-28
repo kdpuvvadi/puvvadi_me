@@ -1,8 +1,0 @@
-{ "version":2,
-  "cleanUrls": true,
-  "regions": ["bom1"],
-  "trailingSlash": false,
-  "redirects": [
-    { "source": "/view-source", "destination": "https://github.com/kdpuvvadi/littlelink" }
-  ]
-}
