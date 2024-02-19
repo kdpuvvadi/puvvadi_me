@@ -1,24 +1,25 @@
+/* eslint-disable import/no-anonymous-default-export */
 export default {
     openGraph: {
         type: 'website',
-        locale: 'en_IE',
-        title: 'next lnks by realvjy',
-        url: 'https://vjy.me',
-        description: 'Custom bio links for creatives who love coding. Made this first to use for my own weblinks vjy.me/lnk.',
+        locale: 'en_US',
+        title: 'KD Puvvadi',
+        url: 'https://puvvadi.me',
+        description: 'Software and Magic',
         locale: 'en_EN',
-        keywords: 'designer, product designer, illustrator, indian designer, vijay verma, realvjy, illlustrations, indian illustrator, ui designer india, sushi design system, zomato designer, 3dicons, uiprint, vijay realvjy, indian ui designer, design india, overlayz, nft art',
+        keywords: 'kd puvvadi, DevOps, Terraform, Vault, Ansible, linux, omada, hugo',
         images: [
             {
                 width: 1200,
                 height: 630,
-                url: `https://vjy.me/preview.jpg`,
+                url: `https://puvvadi.me/images/dp.webp`,
             },
         ],
-        site_name: 'realvjy',
+        site_name: 'KD Puvvadi',
     },
     twitter: {
-        handle: '@realvjy',
-        site: 'vjy.me',
+        handle: '@kdpuvvadi',
+        site: 'puvvadi.me',
         cardType: 'summary_large_image',
     },
 };

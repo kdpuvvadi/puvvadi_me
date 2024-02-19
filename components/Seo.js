@@ -25,11 +25,11 @@ export default function Seo({ page }) {
                             alt: `${title}`,
                         },
                     ],
-                    site_name: 'vjy.me',
+                    site_name: 'puvvadi.me',
                 }}
                 twitter={{
-                    handle: '@realvjy',
-                    site: 'vjy.me',
+                    handle: '@kdpuvvadi',
+                    site: 'puvvadi.me',
                     cardType: 'summary_large_image',
                 }}
                 additionalMetaTags={[{
