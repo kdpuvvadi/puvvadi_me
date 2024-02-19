@@ -1,6 +1,6 @@
 // Weblinks Page Sections
-// created by @realvjy
-// date: 29 Jul, 2022
+// created by @kdpuvvadi
+// date: 19 Feb, 2024
 
 import Image from "next/image";
 import styled from "styled-components";
@@ -25,22 +25,27 @@ const Links = () => {
   const subdesc = bioData[0].subdesc;
   const subdescShow = bioData[0].subdescShow;
   const footerText = bioData[0].footerText;
-  const author = bioData[0].author;
+  const author = bioData[0].name;
   const authorURL = bioData[0].authorURL;
-  const titleImage = "/title.svg";
+  const titleImage = "/images/title.svg";
+  const footerShow = bioData[0].footerShow;
 
   // Check what class to use oval or hex for avatar
   const avatarShape = bioData[0].nftAvatar ? `nft-clipped` : `oval-clipped`
 
 
   // Description and subdescription goes here
-  const descriptionText = descShow ? description : `Write your own fall back text if description not in BioData.js or remove me/leave blank`
+  const descriptionText = descShow ? description : ``
   const subdescText = subdescShow ? subdesc : `Write your own if you want or just remove me/leave blank`
 
 
   const newProduct = bioData[0].newProduct; // checking for newProduct flag true false
   const newProductUrl = bioData[0].newProductUrl; // get product url if available
 
+  // Display footer content
+  const footerDataText = footerShow ? footerText : ``
+  const footerDataURL = footerShow ? authorURL : ``
+  const footerDataAuther = footerShow ? author : ``
 
 
   // Collect all links filter by type - social, project, nft and other etc=
@@ -62,6 +67,10 @@ const Links = () => {
   // Get data for other section
   const others = allLinks.filter((el) => {
     return el.type === "other" && el.on
+  });
+
+  const donate = allLinks.filter((el) => {
+    return el.type === "donate" && el.on
   });
 
   return (
@@ -194,13 +203,33 @@ const Links = () => {
                     </LinkSection> : ''
               }
               {/* End Other Section */}
+              {/* donate Section */}
+              {
+                donate.length > 0 ?
+                    <LinkSection>
+                      <h3>{donate[0].type}s</h3>
+                      {
+                        donate.map((i) => {
+                          return (
+                              <a href={i.url} key={i.title} target="_blank" rel="noreferrer">
+                                <LinkBox>
+                                  <LinkTitle><img src={i.icon} style={{ filter: 'var(--img)' }} /> {i.title}</LinkTitle> <NewUp />
+                                </LinkBox>
+                              </a>
+                          )
+                        })
+                      }
+                    </LinkSection>
+                    : ''
+              }
+              {/* End donate Section */}
 
             </WebLinkWrap>
             {/* End Weblinks */}
           </TopPart>
           <BottomPart>
             <LinkFoot>
-              <h4>{footerText} <a href={authorURL}>{author}</a></h4>
+              <h4>{footerDataText} <a href={footerDataURL}>{footerDataAuther}</a></h4>
             </LinkFoot>
           </BottomPart>
 
