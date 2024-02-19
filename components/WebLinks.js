@@ -88,13 +88,14 @@ const Links = () => {
                   <img
                       src={avatarImg}
                       className={avatarShape}
+                      alt="avatar"
                   />
                 </AvatarWrap>
               </Avatar>
               <Title>
                 {/* Using titleimg flag to use image as title or text */}
                 {titleImg ?
-                    <img src={titleImage} className="handle" /> :
+                    <img alt="title image" src={titleImage} className="handle" /> :
                     <h1>{name}</h1>
                 }
                 {/* if your remove username from data it will not appear */}
@@ -121,7 +122,7 @@ const Links = () => {
                       return (
                           <a href={i.url} key={i.title} target="_blank" rel="noreferrer">
                             <LinkBox className="socialIcon">
-                              <img src={i.icon} style={{ filter: 'var(--img)' }} />
+                              <img alt="social icon" src={i.icon} style={{ filter: 'var(--img)' }} />
                             </LinkBox>
                           </a>
                       )
@@ -141,7 +142,7 @@ const Links = () => {
                           return (
                               <a href={i.url} key={i.title} target="_blank" rel="noreferrer">
                                 <LinkBox>
-                                  <LinkTitle><img src={i.icon} style={{ filter: 'var(--img)' }} /> {i.title}</LinkTitle> <NewUp />
+                                  <LinkTitle><img alt="install icon" src={i.icon} style={{ filter: 'var(--img)' }} /> {i.title}</LinkTitle> <NewUp />
                                 </LinkBox>
                               </a>
                           )
@@ -161,7 +162,7 @@ const Links = () => {
                           return (
                               <a href={i.url} key={i.title} target="_blank" rel="noreferrer">
                                 <LinkBox>
-                                  <LinkTitle><img src={i.icon} style={{ filter: 'var(--img)' }} /> {i.title}</LinkTitle> <NewUp />
+                                  <LinkTitle><img alt="nft icon" src={i.icon} style={{ filter: 'var(--img)' }} /> {i.title}</LinkTitle> <NewUp />
                                 </LinkBox>
                               </a>
                           )
@@ -184,6 +185,7 @@ const Links = () => {
                           <img
                               src={'/newproduct.png'}
                               className="newproduct"
+                              alt="other icon"
                           />
                         </a>
                       </NewSection> : ''
@@ -194,7 +196,7 @@ const Links = () => {
                           return (
                               <a href={i.url} key={i.title} target="_blank" rel="noreferrer">
                                 <LinkBox>
-                                  <LinkTitle><img src={i.icon} /> {i.title}</LinkTitle> <NewUp />
+                                  <LinkTitle><img alt="title" src={i.icon} /> {i.title}</LinkTitle> <NewUp />
                                 </LinkBox>
                               </a>
                           )
@@ -213,7 +215,7 @@ const Links = () => {
                           return (
                               <a href={i.url} key={i.title} target="_blank" rel="noreferrer">
                                 <LinkBox>
-                                  <LinkTitle><img src={i.icon} style={{ filter: 'var(--img)' }} /> {i.title}</LinkTitle> <NewUp />
+                                  <LinkTitle><img alt="donate section" src={i.icon} style={{ filter: 'var(--img)' }} /> {i.title}</LinkTitle> <NewUp />
                                 </LinkBox>
                               </a>
                           )
