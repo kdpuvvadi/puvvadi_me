@@ -6,7 +6,7 @@ const bioData = [
         url: 'https://kdpuvvadi.vercel.app',
         titleImg: true,
         avatar: '/images/avatar.webp',
-        nftAvatar: true,
+        nftAvatar: false,
         description: 'Software, DevOps and Magic',
         descShow: true,
         subdesc: '',
