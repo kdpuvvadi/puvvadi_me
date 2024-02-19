@@ -1,162 +1,67 @@
-// date 29-Jul, 2022
+// date 19-Feb, 2024
 const webLinks = [
     // All social profile
     {
         title: 'Twitter',
-        url: 'https://twitter.com/realvjy',
+        url: 'https://twitter.com/kdpuvvadi',
         type: 'social',
         icon: '/twitter.svg',
         on: true
     },
     {
         title: 'Instagram',
-        url: 'https://instagram.com/realvjy',
+        url: 'https://instagram.com/kdpuvvadi',
         type: 'social',
         icon: '/insta.svg',
         on: true
     },
     {
-        title: 'Dribbble',
-        url: 'https://dribbble.com/realvjy',
-        type: 'social',
-        icon: '/dribbble.svg',
-        on: false
-    },
-    {
-        title: 'Medium',
-        url: 'https://medium.com/@realvjy',
-        type: 'social',
-        icon: '/medium.svg',
-        on: false
-    },
-    {
         title: 'Github',
-        url: 'https://github.com/realvjy',
+        url: 'https://github.com/kdpuvvadi',
         type: 'social',
         icon: '/github.svg',
         on: true
     },
     {
-        title: 'Youtube',
-        url: 'https://youtube.com/realvjy',
-        type: 'social',
-        icon: '/youtube.svg',
-        on: false
-    },
-    {
-        title: 'Figma',
-        url: 'https://figma.com/@realvjy',
-        type: 'social',
-        icon: '/figma.svg',
-        on: true
-    },
-    {
-        title: 'Behance',
-        url: 'https://behance.net/realvjy',
-        type: 'social',
-        icon: '/behance.svg',
-        on: false
-    },
-    {
-        title: 'Linkedin',
-        url: 'https://www.linkedin.com/in/realvjy/',
-        type: 'social',
-        icon: '/linkedin.svg',
-        on: false
-    },
-    {
         title: 'Mastodon',
-        url: 'https://mastodon.online/@realvjy',
+        url: 'https://infosec.exchange/@kdpuvvadi',
         type: 'social',
         icon: '/mastodon.svg',
         on: true
     },
     {
-        title: 'Hive Social',
-        url: 'https://www.hivesocial.app/?@realvjy',
-        type: 'social',
-        icon: '/hive.svg',
-        on: false
-    },
-    {
-        title: 'Post',
-        url: 'https://www.post.news/realvjy',
-        type: 'social',
-        icon: '/post.svg',
-        on: false
-    },
-    {
-        title: 'foundation',
-        url: 'https://vjy.me',
-        type: 'nft',
-        icon: '/foundation.svg',
-        on: false
-    },
-    {
-        title: 'opensea',
-        url: 'https://vjy.me',
-        type: 'nft',
-        icon: '/opensea.svg',
-        on: false
-    },
-    {
-        title: 'new collection',
-        url: 'https://vjy.me',
-        type: 'nft',
-        icon: '/opensea.svg',
-        on: false
-    },
-    // Install section
-    {
-        title: 'Use this template',
-        url: 'https://github.com/realvjy/nxt-lnk/generate',
-        type: 'install',
-        icon: '/use.png',
-        on: true
-    },
-    {
-        title: 'Deploy on Vercel',
-        url: 'https://vercel.com/import/git?s=https://github.com/realvjy/nxt-lnk',
-        type: 'install',
-        icon: '/vercel.svg',
-        on: true
-    },
-    {
-        title: 'Documentation',
-        url: 'https://github.com/realvjy/nxt-lnk#nxt-lnk',
-        type: 'install',
-        icon: '/doc.png',
-        on: true
-    },
-    {
-        title: 'Github',
-        url: 'https://github.com/realvjy/nxt-lnk',
-        type: 'install',
-        icon: '/github-fill.svg',
-        on: true
-    },
-
-    {
-        title: 'Buy Me a Coffee',
-        url: 'https://www.buymeacoffee.com/realvjy',
+        title: 'blog',
+        url: 'https://blog.puvvadi.me',
         type: 'other',
-        icon: '/bmc.png',
+        icon: '/blog.png',
         on: true
     },
-
     {
-        title: 'link demo',
-        url: 'https://vjy.me/lnk',
+        title: 'omadac',
+        url: 'https://omadac.puvvadi.me/',
         type: 'other',
-        icon: '/vjy.png',
+        icon: '/omada.svg',
         on: true
     },
-
     {
-        title: 'maker website',
-        url: 'https://vjy.me',
+        title: 'github',
+        url: 'https://github.com/kdpuvvadi/puvvadi_me',
         type: 'other',
-        icon: '/vjy.png',
+        icon: '/github.svg',
+        on: true
+    },
+    {
+        title: 'donate to quad9',
+        url: 'https://www.quad9.net/donate/',
+        type: 'donate',
+        icon: '/q9.svg',
+        on: true
+    },
+    {
+        title: 'donate to signal',
+        url: 'https://signal.org/donate/',
+        type: 'donate',
+        icon: '/signal.svg',
         on: true
     },
 ];
