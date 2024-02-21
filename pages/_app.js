@@ -8,6 +8,7 @@ import { darkTheme, lightTheme } from "../styles/theme.config";
 import { GoogleAnalytics } from "nextjs-google-analytics";
 import { DefaultSeo } from 'next-seo';
 import SEO from '../next-seo.config';
+import { Analytics } from '@vercel/analytics/react';
 
 function MyApp({ Component, pageProps }) {
     const darkMode = useDarkMode(false, { storageKey: null, onChange: null })
@@ -58,6 +59,7 @@ function MyApp({ Component, pageProps }) {
                     {isMounted && <Component {...pageProps} />}
                 </Layout>
             </ThemeProvider>
+            <Analytics />
         </>
 
     )
