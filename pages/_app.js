@@ -9,6 +9,7 @@ import { GoogleAnalytics } from "nextjs-google-analytics";
 import { DefaultSeo } from 'next-seo';
 import SEO from '../next-seo.config';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 function MyApp({ Component, pageProps }) {
     const darkMode = useDarkMode(false, { storageKey: null, onChange: null })
@@ -60,6 +61,7 @@ function MyApp({ Component, pageProps }) {
                 </Layout>
             </ThemeProvider>
             <Analytics />
+            <SpeedInsights />
         </>
 
     )
