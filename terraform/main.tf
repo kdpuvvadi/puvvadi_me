@@ -57,7 +57,7 @@ resource "cloudflare_record" "puvvadi_me_record" {
   type            = "CNAME"
   ttl             = 1
   allow_overwrite = true
-  proxied         = true
+  proxied         = false
 }
 
 resource "vercel_project_domain" "puvvadi_me_domain" {
@@ -76,7 +76,7 @@ resource "cloudflare_record" "puvvadi_me_record_www" {
   type            = "CNAME"
   ttl             = 1
   allow_overwrite = true
-  proxied         = true
+  proxied         = false
 }
 
 resource "cloudflare_record" "puvvadi_me_record_kd" {
@@ -86,5 +86,15 @@ resource "cloudflare_record" "puvvadi_me_record_kd" {
   type            = "CNAME"
   ttl             = 1
   allow_overwrite = true
-  proxied         = true
+  proxied         = false
+}
+
+resource "vercel_project_domain" "puvvadi_me_domain_www" {
+  project_id = vercel_project.puvvadi_me_project.id
+  domain     = "www.puvvadi.me"
+}
+
+resource "vercel_project_domain" "puvvadi_me_domain_kd" {
+  project_id = vercel_project.puvvadi_me_project.id
+  domain     = "kd.puvvadi.me"
 }
