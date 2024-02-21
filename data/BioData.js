@@ -2,8 +2,8 @@
 const bioData = [
     {
         name: 'KD Puvvadi',
-        username: 'kdpuvvadi.vercel.app',
-        url: 'https://kdpuvvadi.vercel.app',
+        username: 'kd.puvvadi.me',
+        url: '/',
         titleImg: true,
         avatar: '/images/avatar.webp',
         nftAvatar: false,
