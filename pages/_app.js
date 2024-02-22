@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import useDarkMode from "use-dark-mode"
+import useDarkMode from "@fisch0920/use-dark-mode"
 import Head from "next/head";
 import { ThemeProvider } from "styled-components";
 import Layout from "../components/Layout";
