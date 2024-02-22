@@ -5,7 +5,7 @@ import { ThemeProvider } from "styled-components";
 import Layout from "../components/Layout";
 import GlobalStyle from "../styles/GlobalStyle";
 import { darkTheme, lightTheme } from "../styles/theme.config";
-import { GoogleAnalytics } from "nextjs-google-analytics";
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { DefaultSeo } from 'next-seo';
 import SEO from '../next-seo.config';
 import { Analytics } from '@vercel/analytics/react';
@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps }) {
 
     return (
         <>
-            <GoogleAnalytics />
+            <GoogleAnalytics gaId="G-8MQ44B3JVG" />
             <ThemeProvider theme={theme}>
                 <Head>
                     <meta content="width=device-width, initial-scale=1" name="viewport" />
