@@ -14,7 +14,7 @@
     "@react-three/fiber": "^8.2.1",
     "@vercel/analytics": "^1.2.2",
     "@vercel/speed-insights": "^1.0.10",
-    "next": "13",
+    "next": "^14.1.0",
     "next-seo": "^5.5.0",
     "nextjs-google-analytics": "^2.0.0",
     "react": "^18.2.0",
@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "eslint": "8.19.0",
-    "eslint-config-next": "13",
+    "eslint-config-next": "^14.1.0",
     "prettier": "^2.7.1",
     "yarn": "^1.22.21"
   }
