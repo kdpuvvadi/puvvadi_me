@@ -21,25 +21,25 @@ const nextConfig = {
         source: "/debloat",
         destination:
           "https://raw.githubusercontent.com/kdpuvvadi/debloat-windows11/main/debloat.ps1",
-        permanent: true,
+        permanent: false,
       },
       {
         source: "/debloat11",
         destination:
           "https://raw.githubusercontent.com/kdpuvvadi/debloat-windows11/main/debloat.ps1",
-        permanent: true,
+        permanent: false,
       },
       {
         source: "/RemoveAppsList",
         destination:
           "https://raw.githubusercontent.com/kdpuvvadi/debloat-windows11/main/RemoveAppsList.json",
-        permanent: true,
+        permanent: false,
       },
       {
         source: "/installapps",
         destination:
           "https://raw.githubusercontent.com/kdpuvvadi/debloat-windows11/main/installapps.json",
-        permanent: true,
+        permanent: false,
       },
     ];
   },
