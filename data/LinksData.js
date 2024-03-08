@@ -64,6 +64,13 @@ const webLinks = [
         icon: '/signal.svg',
         on: true
     },
+    {
+        title: 'donate to HIBP',
+        url: 'https://haveibeenpwned.com/Donate',
+        type: 'donate',
+        icon: '/hibp.png',
+        on: true
+    },
 ];
 
 export default webLinks;
